@@ -24,8 +24,8 @@ spec:
     spec:
       containers:
         - name: wp-database
-          image: mariadb:10.6.4-focal
-          imagePullPolicy: IfNotPresent
+          image: mariadb:10.6.4-focal:v1
+          imagePullPolicy: Always
           envFrom:
             - configMapRef:
                 name: wp-database-configmap

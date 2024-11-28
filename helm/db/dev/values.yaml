@@ -5,9 +5,9 @@ db:
     env: dev
     stack: wordpress
   image:
-    repository: mariadb
-    tag: "10.6.4-focal"
-    pullPolicy: IfNotPresent
+    repository: mariadb:10.6.4-focal
+    tag: v1
+    pullPolicy: Always
   replicas: 1
   configmap:
     ## KEY: "value"
