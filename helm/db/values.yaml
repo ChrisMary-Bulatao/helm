@@ -9,7 +9,6 @@ db:
     stack: wordpress
   image:
     repository: mariadb:10.6.4-focal
-    tag: v1
     pullPolicy: Always
   replicas: 1
   configmap:
